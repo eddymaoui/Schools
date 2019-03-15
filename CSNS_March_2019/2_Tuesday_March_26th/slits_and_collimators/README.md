@@ -16,7 +16,7 @@ Use a collimator instead of the slit system
 
 ### HINTS
 * Simple collimator is called "Collimator_linear"
-* mcdoc Collimator
+* ```mcdoc Collimator```
 * Divergence often given in arc min, 60 arc min = 1 deg.
 
 ### INTERPRETATION
