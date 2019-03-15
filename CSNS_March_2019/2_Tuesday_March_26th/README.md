@@ -20,7 +20,7 @@ The schedule of the day switches between talks about new components and practica
 These notes are for exercises held on Tuesday, but the students have
 already had a practical session on sources and monitors on
 monday. Assume sources and monitors are understood. Here we will use
-```source simple``` and ```PSD_monitor, Divergence_monitor```, ```L_monitor``` and ```DivPos_monitor```.
+```source_simple``` and ```PSD_monitor, Divergence_monitor```, ```L_monitor``` and ```DivPos_monitor```.
 
 
 ## A1) Slits
