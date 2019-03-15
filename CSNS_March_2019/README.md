@@ -4,3 +4,6 @@ Infrastructure for sharing instrument files and exercise notes for the
 See also http://csns2019.mcstas.org 
 
 ![Partner logos](images/logos.png?raw=true "")
+
+Overall week agenda:
+![Agenda](images/agenda.png?raw=true "")
