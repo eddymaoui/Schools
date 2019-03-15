@@ -5,7 +5,7 @@
 * Observe second order
 
 ### HINTS
-*Use Monochromator_curved component as it supports higher orders, for one crystal: NH=1,NV=1
+* Use Monochromator_curved component as it supports higher orders, for one crystal: NH=1,NV=1
 * ```mcdoc Monochromator```
 * Q of Pyrolytic Graphite = 3.355. Remember lambda < 4*PI/Q
 * Variables declared in declare section with c syntax, RAD2DEG is the constant for radians to deg conversion
