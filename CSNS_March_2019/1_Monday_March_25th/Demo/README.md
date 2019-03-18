@@ -42,7 +42,6 @@
 ![Run in Trace mode](images/run_mcdisplay.png?raw=true "")
 13. Press ```Start``` and a browser should appear
 ![Trace in browser](images/mcdisplay_output.png?raw=true "")
-(Link to such an html output available [here](demo_mcdisplay/index.html)
 14. Press run again and choose Simulation, then Start
 ![Run in Simulation mode](images/run_simulation.png?raw=true "")
 15. Pressing Plot will give you the data from the PSD
