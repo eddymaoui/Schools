@@ -1,6 +1,7 @@
 ## Slits
 ### TASK
-Make a slit collimation system consisting of two slits.
+Make a slit collimation system consisting of two slits, monitoring how
+the beam/phase space changes. Use both ```PSD_monitor```, ```Divergence_monitor``` and ```DivPos_monitor```.
 
 ### HINTS
 * Slit component is called "Slit", for both circular and rectangular
