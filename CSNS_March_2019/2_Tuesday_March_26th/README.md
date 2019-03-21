@@ -3,18 +3,18 @@ This folder contains instrument files for use as solutions to exercises at the C
 The schedule of the day switches between talks about new components and practical sessions where
  these components are used in very simple instrument files.
 
-## [A) Slits and collimators](slits_and_collimators)
+## [A) Slits and collimators](1_slits_and_collimators)
 	A1) Source, Slit, Slit, Monitor
 	A2) Source, Collimator, Monitor
 
-## [B) Guides](guides)
+## [B) Guides](2_guides)
 	B1) Source, Slit, Guide, Slit, Monitor (includes guide length as parameter)
 	B2) Source, Guide, Monitor (eqvivalent but simpler)
 
-## [C) Monochromator](monochromators)
+## [C) Monochromator]4_(monochromators)
 	C1) Source, Guide, Monochromator, Monitor (includes 2theta calculation in initialize)
 
-## [D) Choppers](choppers)
+## [D) Choppers](5_choppers)
 	D1) Source, Guide, Chopper, Guide, Monochromator, Monitor
 
 These notes are for exercises held on Tuesday, but the students have
