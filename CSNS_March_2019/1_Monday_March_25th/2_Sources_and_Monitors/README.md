@@ -4,8 +4,7 @@ The purpose of this exercise is simply to get familiar with the concepts of Sour
 We will insert a source and two monitors and then modify these to examine some internal properties.
 
 ## Initial works.
-1. Start a new instrument simulation and insert a circular source ( Source_simple ) in the trace section, to emit neutrons with wavelengths in the interval
-lamdba=[1 8] AA. Focus the sampling at a rectangle downstream.
+1. Start a new instrument simulation and insert a circular source ( Source_simple with radius != 0 ) in the trace section, to emit neutrons with wavelengths in the interval lamdba=[1 8] AA. Focus the sampling at a rectangle downstream.
 2. Insert a PSD_monitor and a L_monitor at the same position as the focusing rectangle. Make sure they capture the full radiation of the source. Do you see what you expected? It should look something like this:
 ![First Results mcplot](images/2_sources_and_monitors_1st.png?raw=true "")
 
