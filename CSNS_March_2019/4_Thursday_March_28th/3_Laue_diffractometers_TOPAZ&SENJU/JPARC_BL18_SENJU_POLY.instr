@@ -61,23 +61,7 @@ DECLARE
   int xtal_scatter;
   char crystal_file[]="Al.lau"; //the christal files are in /usr/local/lib/mcstas-2.0/data
     
-  void compute_global_vector(char *s,double kx,double ky, double kz,double *gkx,double *gky, double *gkz, Rotation R){
-    Rotation TT;
-    rot_transpose(R, TT);
-    /* now make the coordinate system change */
-    coords_get(rot_apply(TT,coords_set(kx,ky,kz)),gkx,gky,gkz);
-    //if (*gx==0 && *gy==0 && *gz==0){
-    //    fprintf(stderr,"oddity: xyz=( %g %g %g ) transforms to gxgygz=( %g %g %g )\n",x,y,z,*gx,*gy,*gy);
-  }
 
-  void compute_global_coords(char *s,double x,double y, double z,double *gx,double *gy, double *gz, Coords A, Rotation R){
-    Rotation TT;
-    rot_transpose(R, TT);
-    /* now make the coordinate system change */
-    coords_get(coords_add(rot_apply(TT,coords_set(x,y,z)),A),gx,gy,gz);
-    //if (*gx==0 && *gy==0 && *gz==0){
-    //    fprintf(stderr,"oddity: xyz=( %g %g %g ) transforms to gxgygz=( %g %g %g )\n",x,y,z,*gx,*gy,*gy);
-  }
   int sx_scatter;
   int anton;
   int oidx;
@@ -148,10 +132,6 @@ DECLARE
   char *det_fn_040=det_fn[40];
 
 
-/*  ,*det_fn_002,*det_fn_003,*det_fn_004,*det_fn_005,*det_fn_006,*det_fn_007,*det_fn_008,*det_fn_009,*det_fn_010;*/
-/*  char *det_fn_011,*det_fn_012,*det_fn_013,*det_fn_014,*det_fn_015,*det_fn_016,*det_fn_017,*det_fn_018,*det_fn_019,*det_fn_020;*/
-/*  char *det_fn_021,*det_fn_022,*det_fn_023,*det_fn_024,*det_fn_025,*det_fn_026,*det_fn_027,*det_fn_028,*det_fn_029,*det_fn_030;*/
-/*  char *det_fn_031,*det_fn_032,*det_fn_033,*det_fn_034,*det_fn_035,*det_fn_036,*det_fn_037,*det_fn_038,*det_fn_039,*det_fn_040;*/
 
 %}
 
@@ -249,11 +229,6 @@ INITIALIZE
     int j;
     for (j=1;j<=40;j++){
       sprintf(det_fn[j],"%s_%06d_%03d",samplename,runnumber,j);
-      if(j==1){
-        printf("detector filenames:\n%s\n .\n .\n .\n",det_fn[j]);
-      }else if(j==40){
-        printf("%s\n",det_fn[j]);
-      }  
     }
 
     /*position SENJU far field detectors according to calibration*/
@@ -1332,37 +1307,6 @@ EXTEND
 %{
   SCATTER;
 %}
-
-/*Anton's detector has to come after the others - there's still an implicit ABSORB for unGROUPed monitors here*/
-/*COMPONENT mon_MCP = Monitor_nD(*/
-/*    xwidth=0.028, yheight=0.028, filename="mon_MCP",options="list all x,y,z,vx,vy,vz,t,sx,sy,sz",restore_neutron=1*/
-/*)*/
-/*AT(0,0,0.02) RELATIVE psdsamp  */
-/*GROUP mcp*/
-
-/*COMPONENT mon_MCP = FITS_monitor_new(*/
-/*        noextrafiles=1,xwidth=0.028, yheight=0.028, filename="mon_MCP",short_floats=1,nx=258,ny=258,nt=400,tmin=1, tmax=40000,restore_neutron=1*/
-/*)*/
-/*WHEN (side & 4) AT(0,0,0.02) RELATIVE psdsamp*/
-/*GROUP mcp*/
-
-/*COMPONENT psd_anton2 = PSD_monitor(*/
-/*    xwidth=0.028, yheight=0.028, nx=301, ny=301,filename="psd_anton2.dat",restore_neutron=1)*/
-/*AT(0,0,0.2) RELATIVE psdsamp*/
-/*GROUP mcp*/
-
-/*COMPONENT mon_MCP_not = Monitor_nD(*/
-/*    radius=0.025, filename="mon_MCP_not", options="t bins=400 limits=[1e-6 40000e-6]", restore_neutron=1)*/
-/*AT(0,0,0) RELATIVE psdsamp*/
-/*GROUP mcp*/
-/**/
-/*COMPONENT mon_MCP_catchall = Arm()*/
-/*AT(0,0,0) RELATIVE PREVIOUS*/
-/*GROUP mcp*/
-/*EXTEND*/
-/*%{*/
-/*  SCATTER;*/
-/*%}*/
 
 
 FINALLY
