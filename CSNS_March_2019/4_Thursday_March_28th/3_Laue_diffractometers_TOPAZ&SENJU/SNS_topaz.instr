@@ -628,16 +628,7 @@ COMPONENT a44=Arm()
 AT(0,0,0) RELATIVE sample_mnt
 ROTATED (36,0,0) RELATIVE b06
 
-/*theactual detectors*/
-/*COMPONENT psd0=Monitor_nD(*/
-/*    filename="m0.psd",xwidth=det_d,yheight=det_d,options="square x,y bins=100")*/
-/*WHEN (DIRECT) AT(0,0,ld) RELATIVE a0*/
-/*ROTATED (0,0,45) RELATIVE a0*/
-/*GROUP detectors*/
-/*EXTEND*/
-/*%{*/
-/*  if (SCATTERED) compute_global_coords(NAME_CURRENT_COMP,x,y,z,&ux,&uy,&uz,POS_A_CURRENT_COMP,ROT_A_CURRENT_COMP);*/
-/*%}*/
+/*the actual detectors*/
 
 
 
