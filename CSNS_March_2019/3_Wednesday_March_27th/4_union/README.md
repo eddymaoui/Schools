@@ -3,10 +3,9 @@ The Union components are a bit different than other McStas components because th
 In this exercise you will add a sample environment to a simple instrument file called open_exercise.instr. The file already has a source, sample made with Union components and two detectors. The also file contains definitions of many materials, for example Aluminum and a Na2Ca3Al2F14 powder.
 
 ### TASK 1
-Add a Al sample environment to the instrument file using additional Union geometry components.
-Try to add small parts to the sample environment of other materials, it does not have to be realistic.
-
-Run simulations for a beam with energy of 3 meV, 4 meV and 5 meV.
+* Add a Al sample environment to the instrument file using additional Union geometry components.
+* Try to add small parts to the sample environment of other materials, it does not have to be realistic.
+* Run simulations for a beam with energy of 3 meV, 4 meV and 5 meV.
 
 ### HINTS
 * The higher priority is simulated when geometries overlap, the outer parts of a sample environment should have lower priority than the sample
@@ -20,11 +19,9 @@ Run simulations for a beam with energy of 3 meV, 4 meV and 5 meV.
 ### INTERPRETATION
 Without any additions, the instrument returns a powder diffraction pattern. 
 With an Al sample environment, the 3 different beam energies result in very different Al scattering. 
-With 3 meV no Al Bragg scattering is possible, no multiple scattering in cryostat. 
-
-With 4 meV only one Bragg reflection near backscattering is allowed. 
-
-With 5 meV two Bragg reflections are allowed. 
+* With 3 meV no Al Bragg scattering is possible, no multiple scattering in cryostat
+* With 4 meV only one Bragg reflection near backscattering is allowed
+* With 5 meV two Bragg reflections are allowed
 
 
 ### TASK 2
