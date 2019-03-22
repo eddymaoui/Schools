@@ -37,13 +37,13 @@ Add Union logger components before the Union_master to record what happens in yo
 
 ### INTERPRETATION
 This interpretation section explains each logger result in the open_exercise_logger_solution.instr instrument. 
-*scattering_time: Scattering as a function of time. No scattering happens before the beam reaches the sample environment, see the 5 early peaks that corresponds to entering two layers of the cryostat, the sample, and leaving the two layers. Then there is the multiple scattering decay that is highly dependent on the energy selected.
-*scattering_time_sample: Scattering in sample as a function of time. The first main peak is the beam reaching the sample. At 5 meV energy two later peaks are observed, these correspond to the backscattered beam from when the beam tries to leave the cryostat.
-*scattering_time_environment: Scattering in environment as a function of time. At 5 meV small peaks are seen when the beam bounces back and forth from backscattering in front and back.
-*scattering_zx: Spatial distribution of scattering in zx plane. Beam entry, sample and beam exit are most intense. See powder scattering from beam entry and exit, but also from the powder sample. In general the scattered signals from the sample are thinner because the sample is smaller than the beam.
-*scattering_xy: Spatial distribution of scattering in xy plane. The powder rings are clerkly visible from this view, and the sample holder can also be observed under the sample.
-*scattering_zx: Spatial distribution of scattering in zy plane. Here the backscattering from entry and exit is more apparent, and can be distinguished from the scattering from the sample.
-*reciprocal_space_zx: Scattering vector distribution in zx plane. The smaller circle on the right side correspond to the reach in reciprocal space of the initial beam, yet multiple scattering allows reaching more of reciprocal space. Each vertical line corresponds to a powder Bragg peak.
+* scattering_time: Scattering as a function of time. No scattering happens before the beam reaches the sample environment, see the 5 early peaks that corresponds to entering two layers of the cryostat, the sample, and leaving the two layers. Then there is the multiple scattering decay that is highly dependent on the energy selected.
+* scattering_time_sample: Scattering in sample as a function of time. The first main peak is the beam reaching the sample. At 5 meV energy two later peaks are observed, these correspond to the backscattered beam from when the beam tries to leave the cryostat.
+* scattering_time_environment: Scattering in environment as a function of time. At 5 meV small peaks are seen when the beam bounces back and forth from backscattering in front and back.
+* scattering_zx: Spatial distribution of scattering in zx plane. Beam entry, sample and beam exit are most intense. See powder scattering from beam entry and exit, but also from the powder sample. In general the scattered signals from the sample are thinner because the sample is smaller than the beam.
+* scattering_xy: Spatial distribution of scattering in xy plane. The powder rings are clerkly visible from this view, and the sample holder can also be observed under the sample.
+* scattering_zx: Spatial distribution of scattering in zy plane. Here the backscattering from entry and exit is more apparent, and can be distinguished from the scattering from the sample.
+* reciprocal_space_zx: Scattering vector distribution in zx plane. The smaller circle on the right side correspond to the reach in reciprocal space of the initial beam, yet multiple scattering allows reaching more of reciprocal space. Each vertical line corresponds to a powder Bragg peak.
 
 
 
