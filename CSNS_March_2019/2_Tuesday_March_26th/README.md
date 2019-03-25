@@ -11,11 +11,13 @@ The schedule of the day switches between talks about new components and practica
 	B1) Source, Slit, Guide, Slit, Monitor (includes guide length as parameter)
 	B2) Source, Guide, Monitor (eqvivalent but simpler)
 
-## [C) Monochromator]4_(monochromators)
+## [C) Monochromator](4_monochromators)
 	C1) Source, Guide, Monochromator, Monitor (includes 2theta calculation in initialize)
 
 ## [D) Choppers](5_choppers)
 	D1) Source, Guide, Chopper, Guide, Monochromator, Monitor
+
+## [E) Velocity Selector](6_velocity_selector)
 
 These notes are for exercises held on Tuesday, but the students have
 already had a practical session on sources and monitors on
@@ -78,7 +80,7 @@ Perform a scan over guide length to see intensity fall off
 * Use Arm to find 2 theta direction
 
 ### INTERPRETATION
-The monochromator produce a low divergence beam. Contains correlation between divergence, position and energy due to Braggs law. Higher orders have different intensity due to guide transport for different wavelengths. 
+The monochromator produces a low divergence beam. Contains correlation between divergence, position and energy due to Braggs law. Higher orders have different intensity due to guide transport for different wavelengths.
 
 ## D) Chopper
 ### TASK
@@ -94,4 +96,13 @@ Imagine if the higher orders were a problem, introduce a chopper into the guide 
 ### INTERPRETATION
 Higher orders of scattering from monochromator should be removed.
 
+## E) Velocity Selector
+### TASK
+Replace the higher order suppressing chopper with a velocity selector which only
+allows the deisred wavelength through.
 
+### HINTS
+* ```mcdoc V_selector```
+* You may (mostly) use the default values coming from D11@ILL
+* You will have to make more room for the velocity selector than for he chopper
+* Declare extra variable(s) to be able to dynamically set the wavelength
