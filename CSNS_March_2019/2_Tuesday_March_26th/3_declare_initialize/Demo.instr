@@ -23,7 +23,7 @@
 *
 * %E
 *******************************************************************************/
-DEFINE INSTRUMENT template_body_simple(Omega=10)
+DEFINE INSTRUMENT template_body_simple(Omega=1)
 
 DECLARE
 %{
