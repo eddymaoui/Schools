@@ -3,7 +3,7 @@
 * Copy ```Arm.comp``` from ```$MCSTAS/optics``` to the local workdir, rename to ```Mirror_simple.comp```
 * Edit the file changing all instances of Arm to Mirror_simple
 * Add ```SETTING PARAMETERS``` for geometry, e.g. ```yheight``` and ```zlength```
-* In ``ÌNITIALIZE``` check that the new parameters are > 0
+* In ```INITIALIZE``` check that the new parameters are > 0
 * In ```TRACE, do a ```PROP_Z0``` to move the neutron to the mirror plane
 * if-statement checking that the neutron is inside the z-y ranges, otherwise ```RESTORE_NEUTRON```
 * Flip the sign of vx and ```SCATTER```
