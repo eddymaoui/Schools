@@ -68,7 +68,7 @@ COMPONENT brilliance_monitor = Brilliance_monitor(
     xwidth=0.1, 
     yheight=0.1, 
     source_dist=2, 
-    filename="Brilliance", t_1=8000)
+    filename="Brilliance", t_1=15000, nt=1501)
 AT (0, 0, 0) RELATIVE PREVIOUS
 
 
