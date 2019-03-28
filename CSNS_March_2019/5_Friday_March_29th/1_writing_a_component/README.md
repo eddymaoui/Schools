@@ -9,6 +9,11 @@
 * Flip the sign of vx and ```SCATTER```
 * Add a rectangle on the y-z plane in the ```DISPLAY``` section to show the mirror 
 * Try using the mirror in an instrument
-* Add a scalar reflectivity ```r0```
-* Do an MC choice with ```rand01``` in the ```TRACE``` section to see if we are below ```r0```, otherwise transmit
-...
+* Add a scalar reflectivity ```r0``` as a  ```SETTING PARAMETERS```
+* Do a MC choice with ```rand01``` in the ```TRACE``` section to see if we are below ```r0```, otherwise transmit
+* Build a test instrument with:
+   1. a source
+   1. a mirror (your compoenent)
+   1. two detectors - one catching the reflected beam, one catching the trasnmitted
+* Try out your mirror to confirm the it works.
+* Add another  ```SETTING PARAMETERS```: fraction. We will use this to govern Monte Carlo statistics in the reflected and transmitted branches.
